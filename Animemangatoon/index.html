@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lore Olympus Webtoon</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100">
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl font-bold">Lore Olympus</div>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Home</a></li>
+          <li><a href="#characters" class="text-gray-600 hover:text-blue-500">Characters</a></li>
+          <li><a href="#read-more" class="text-gray-600 hover:text-blue-500">Read More</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative h-screen bg-cover bg-center" style="background-image: url('images/hero-image.jpg')">
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    <div class="relative h-full flex justify-center items-center">
+      <h1 class="text-4xl md:text-6xl text-white font-bold animate-fadeIn">Lore Olympus: Jaw Dropping Seen on Media</h1>
+    </div>
+  </header>
+
+  <!-- Characters Section -->
+  <section id="characters" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">Meet the Characters</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Character Card 1 -->
+        <div class="group relative overflow-hidden">
+          <img src="images/character1.jpg" alt="Character 1" class="w-full h-72 object-cover" />
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity"></div>
+          <div class="absolute inset-0 flex justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+            <div>
+              <h3 class="text-2xl font-bold">Character 1</h3>
+              <p class="mt-2">Brief description about Character 1.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more character cards similarly -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-to-Action Section -->
+  <section id="read-more" class="py-16 bg-gray-200 text-center">
+    <h2 class="text-3xl font-bold mb-6">Discover More</h2>
+    <p class="mb-8">Click below to explore the world of Lore Olympus.</p>
+    <a href="#" class="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">Read More</a>
+  </section>
+
+  <!-- Carousel Section -->
+  <section id="carousel" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">Top Supernatural Manhwas</h2>
+      <div id="carousel-container" class="relative overflow-hidden">
+        <div id="carousel-items" class="flex space-x-4">
+          <!-- Manhwa Card 1 -->
+          <div class="w-64 flex-shrink-0 bg-gray-100 p-4 rounded-lg">
+            <img src="images/manhwa1.jpg" alt="Manhwa 1" class="w-full h-40 object-cover mb-4" />
+            <h3 class="text-xl font-bold">Manhwa Title 1</h3>
+            <p>Brief description of the manhwa.</p>
+          </div>
+          <!-- Add more manhwa cards similarly -->
+        </div>
+      </div>
+      <div class="mt-4 text-center">
+        <button id="prevBtn" class="px-4 py-2 bg-blue-500 text-white rounded-md mr-2">Prev</button>
+        <button id="nextBtn" class="px-4 py-2 bg-blue-500 text-white rounded-md">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
